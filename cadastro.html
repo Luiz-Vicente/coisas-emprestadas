@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <main>
-        <h2>Cadastro</h2>
-        <input type="text">
-        <input type="number">
-        <input type="text">
-        <input type="email">
-        <input type="text">
-        <button type="submit">Cadastrar-me</button>
-        <a href="./login.html">Fazer login</a>
+        <h1>Cadastro</h1>
+        <label for="nome">Nome completo:</label><input name="nome" type="text">
+        <label for="fone">Telefone:</label><input name="fone" type="number">
+        <label for="endereco">Endereço:</label><input name="endereco" type="text">
+        <label for="email">E-mail:</label><input name="email" type="email">
+        <label for="senha">Senha:</label><input name="senha" type="text">
+        <button class="btn-padrao" type="submit">Cadastrar-me</button>
+        <a href="./index.html">Fazer login</a>
     </main>
 </body>
 </html>
