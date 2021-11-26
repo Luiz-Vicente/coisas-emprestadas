@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Cadastrar-me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
 </head>
 <body>
+
     <main>
-        <h1>Cadastro</h1>
-        <label for="nome">Nome completo:</label><input id="nome" name="nome" type="text">
-        <label for="fone">Telefone:</label><input id="fone" name="fone" type="tel">
-        <label for="endereco">Endereço:</label><input id="endereco" name="endereco" type="text">
-        <label for="email">E-mail:</label><input id="email" name="email" type="email">
-        <label for="senha">Senha:</label><input id="senha" name="senha" type="text">
-        <button class="btn-padrao" type="submit">Cadastrar-me</button>
-        <a href="./index.html">Fazer login</a>
+        <form method="POST" action="./php/autentica.php">
+            <h1>Cadastro</h1>
+            <input required placeholder="Nome" type="text">
+            <input required placeholder="Telefone" type="tel" maxlength="11">
+            <input required placeholder="Endereço" type="text">
+            <input required placeholder="E-mail" type="email">
+
+            <h2>Escolha uma senha</h2>
+            <input placeholder="Senha" type="text">
+            <input placeholder="Repita a sua senha" type="text">
+            <button type="submit">Cadastrar-me</button>
+        </form>
+        <a href="./index.html"><ins>Login</ins></a>
     </main>
 </body>
 </html>
