@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
     <main>
         <h1>Login</h1>
-        <label for="email">E-mail:</label><input id="email" name="email" type="email">
-        <label for="senha">Senha:</label><input id senha name="senha" type="password">
-        <button class="btn-padrao" type="submit">Entrar</button>
-        <a href="./cadastro.html">Cadastrar-me</a>
+        <form method="POST" action="./php/login.php">
+            <input placeholder="Usuario" type="text">
+            <input placeholder="Senha" type="password">
+            <button type="submit">Entrar</button>
+        </form>
+        <a href="">Cadastrar-me</a>
     </main>
 </body>
 </html>
