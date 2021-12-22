@@ -1,29 +1,16 @@
-body {
-    background-color: green;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    height: 100vh;
-}
-
 main {
-    background-color: #fefefe;
-
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
-    border-radius: 10px;
-    box-shadow: 0 5px 30px black;
 
-    width: 630px;
-    height: auto;
-    padding: 10px;
+    position: absolute;
+    left: 20%;
+
+    width: auto;
+    height: 100vh;
+    padding-left: 20px;
+
 }
 
 main h1 {
@@ -45,16 +32,19 @@ main h2 {
     margin-bottom: 10px;
 }
 
+main p {
+    color: rgb(8, 80, 8);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 4px;
+}
+
 main a {
     color: green;
     font-family: 'Lato', sans-serif;
     font-size: 15px;
-    text-decoration: none;
+    padding: 6px;
     transition: 0.5s;
-}
-
-main a:hover {
-    color: #263238;
+    text-decoration:none;
 }
 
 form {
@@ -90,9 +80,16 @@ input::placeholder {
 textarea:focus, input:focus, select:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
-} 
+}
 
-button {
+label{
+    font-family: 'Lato', sans-serif;
+    display: block;
+    font-size: 1.100rem;
+    padding-bottom: 4px;
+}
+
+.btn-padrao {
     background-color: green;
 
     color: #fefefe;
@@ -105,8 +102,55 @@ button {
 
     width: 120px;
     height: 30px;
+    margin-left: 10px;
 
     transition: 0.5s;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+}
+
+.btn-novo {
+    background-color: green;
+
+    color: #fefefe;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+
+    border-radius: 30px;
+    border: none;
+
+    width: 40px;
+    height: 30px;
+    margin-left: 10px;
+
+    transition: 0.5s;
+}
+
+.btn-alerta {
+    background-color: red;
+
+    color: #fefefe;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: 'Lato', sans-serif;
+
+    border-radius: 30px;
+    border: none;
+
+    width: 110px;
+    height: 30px;
+    margin-left: 10px;
+
+    transition: 0.5s;
+}
+
+.btn-alerta a{
+    text-decoration: none;
+    padding: 6px;
 }
 
 button:hover {

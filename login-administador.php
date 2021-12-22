@@ -8,16 +8,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+        <?php
+            if(isset($_GET['autentica'])){
+                echo "<p  class='erro'>Você não têm permissão de acesso</p>";
+            }
+        ?>
     <main>
         <h1>Login</h1>
-        <form method="POST" action="./php/login.php">
-            <input placeholder="Usuario" type="text">
-            <input placeholder="Senha" type="password">
+        <?php
+            if(isset($_GET['erro'])){
+                echo "<p   class='erro'>Usuario ou senha incorretos</p>";
+            }
+        ?>
+        <form method="POST" action="./php/login-admin.php">
+            <input name="email" placeholder="E-mail" type="email">
+            <input name="senha" placeholder="Senha" type="password">
             <button type="submit">Entrar</button>
         </form>
-        <a href="./cadastro.html"><ins>Cadastrar-me</ins></a>
     </main>
 </body>
 </html>
